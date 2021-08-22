@@ -6,5 +6,6 @@ pip3 install -r requirements.txt
 ```
 ### Run
 ```
-python3 faucet.py
+flask run --host=0.0.0.0
+
 ```
