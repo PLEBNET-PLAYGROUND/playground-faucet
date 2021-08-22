@@ -8,7 +8,8 @@ api = Flask(__name__)
 def get_faucet():
   address = request.args.get('address')
   commandline = 'bitcoin-cli -named sendtoaddress address="' + address + '" amount=1 fee_rate=1'
-  return os.system(os)
+  os.system(commandline)
+  return "Success"
 
 if __name__ == '__main__':
     api.run() 
