@@ -14,7 +14,7 @@ def get_faucet():
 @api.route('/graph', methods=['GET'])
 def get_graph():
   try:
-    return send_from_directory("/root/graph", filename="graph.json", as_attachment=False)
+    return send_file("/root/graph/graph.json")
   except FileNotFoundError:
     abort(404)
 
